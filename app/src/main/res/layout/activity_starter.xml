@@ -8,25 +8,16 @@
     android:paddingStart="8dp"
     android:paddingRight="8dp"
     android:paddingEnd="8dp"
-    android:orientation="vertical"
-    android:weightSum="1"
     tools:context="com.hancheng.weiblog.StarterActivity">
 
-    <view
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        />
-
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         >
         <TextView
             android:id="@+id/welcome_text"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/welcome_string"
             android:textColor="@android:color/white"
@@ -69,5 +60,6 @@
                 android:gravity="center"
                 />
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
