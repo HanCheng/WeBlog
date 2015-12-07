@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="8dp"
+    android:paddingStart="8dp"
+    android:paddingRight="8dp"
+    android:paddingEnd="8dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.hancheng.weiblog.StarterActivity">
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_string"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="45dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textSize="18sp"
+                android:background="@drawable/round_coner_rec"
+                android:paddingTop="4dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingTop="4dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
