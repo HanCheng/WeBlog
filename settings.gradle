@@ -1,1 +1,3 @@
-include ':app'
+include ':WeiBlog'
+include ':WeiBlogApp'
+project(':WeiBlogApp').projectDir = new File(settingsDir, '../weiblog/WeiBlogApp')

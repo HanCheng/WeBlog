@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.stanfy.spoon:spoon-gradle-plugin:1.0.3'
+    }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    defaultConfig {
+//        applicationId "com.hancheng.weiblog"
+        minSdkVersion 14
+        targetSdkVersion 23
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+//        debug {
+//            minifyEnabled true
+//            proguardFile 'proguard-rules.txt'
+//            testProguardFile 'test-proguard-rules.txt'
+//        }
+//        release {
+//            minifyEnabled true
+//            proguardFile getDefaultProguardFile('proguard-android.txt')
+//            proguardFile 'proguard-rules.txt'
+//            signingConfig signingConfigs.releaseSign
+//        }
+    }
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    signingConfigs {
+        prerelease {
+            storeFile file("taflights_playstore.jks")
+            storePassword "flightsmobilenyc"
+            keyPassword "flightsmobilenyc"
+        }
+    }
+    lintOptions {
+        abortOnError false
+        lintConfig file("lint.xml")
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile project(':WeiBlog')
+
+}

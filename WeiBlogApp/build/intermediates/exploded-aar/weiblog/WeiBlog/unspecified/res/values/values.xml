@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_background_normal">#03A9F4</color>
+    <color name="blue_background_valid">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="app_name">WeiBlog</string>
+    <string name="forget_password_string">Forgot password?</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="welcome_string">Welcome to WeiBlog \n\nGet real-time updates about what matters to you</string>
+    <style name="WeiBlogNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+    <style name="WeiBlogTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeiBlog/WeiBlog.iml" filepath="$PROJECT_DIR$/WeiBlog/WeiBlog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeiBlogApp/WeiBlogApp.iml" filepath="$PROJECT_DIR$/WeiBlogApp/WeiBlogApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/weiblog.iml" filepath="$PROJECT_DIR$/weiblog.iml" />
     </modules>
   </component>
