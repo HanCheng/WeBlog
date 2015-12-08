@@ -8,11 +8,19 @@
     android:paddingStart="8dp"
     android:paddingRight="8dp"
     android:paddingEnd="8dp"
-    tools:context="com.hancheng.weiblog.StarterActivity">
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".ui.StarterActivity">
+
+    <View
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         android:orientation="vertical"
         >
         <TextView
@@ -39,6 +47,7 @@
             >
 
             <TextView
+                android:id="@+id/sign_up_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sign_up"
@@ -50,13 +59,13 @@
                 />
 
             <TextView
+                android:id="@+id/log_in_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/log_in"
                 android:textSize="18sp"
                 android:textColor="@android:color/white"
                 android:paddingTop="4dp"
-                android:paddingBottom="5dp"
                 android:gravity="center"
                 />
         </LinearLayout>

@@ -1,16 +1,18 @@
-package com.hancheng.weiblog;
+package com.hancheng.weiblog.ui;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class StarterActivity extends AppCompatActivity {
+import com.hancheng.weiblog.R;
+
+public class SignUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_starter);
+        setContentView(R.layout.activity_sign_up);
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) actionBar.hide();
+//        if (actionBar != null) actionBar.hide();
     }
 }
